@@ -13,6 +13,7 @@ namespace RestaurantRater.Models
         public string Name { get; set; }
         public string Address { get; set; }
         public int Rating { get; set; }
+        public string Comment { get; set; }
     }
 
     //DbContext handles relationship to the DB, includes querying

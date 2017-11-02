@@ -29,7 +29,7 @@ namespace RestaurantRater.Controllers
         // POST: Restaurant/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RestaurantID,Name,Address,Rating")] Restaurant restaurant)
+        public ActionResult Create([Bind(Include = "RestaurantID,Name,Address,Rating,Comment")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace RestaurantRater.Controllers
         // POST: Restaurants/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RestaurantID,Name,Address,Rating")] Restaurant restaurant)
+        public ActionResult Edit([Bind(Include = "RestaurantID,Name,Address,Rating,Comment")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
