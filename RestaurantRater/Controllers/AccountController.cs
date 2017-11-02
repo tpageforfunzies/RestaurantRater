@@ -61,6 +61,12 @@ namespace RestaurantRater.Controllers
             return View();
         }
 
+        // GET: /Account/MyAccount
+        public ActionResult MyAccount()
+        {
+            return View();
+        }
+
         //
         // POST: /Account/Login
         [HttpPost]
