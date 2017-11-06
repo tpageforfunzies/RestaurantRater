@@ -22,7 +22,7 @@ namespace RestaurantRater.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Taylor Page";
 
             return View();
         }
